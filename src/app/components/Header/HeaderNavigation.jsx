@@ -1,6 +1,8 @@
 import React from "react";
 import { FaAngleDown } from "react-icons/fa6";
 
+<script src="dropdown.js"></script>
+
 export const HeaderNavigation = (props) => {
     return (<nav>
             <ul className={props.className}>
