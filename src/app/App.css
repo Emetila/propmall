@@ -29,3 +29,12 @@
   background-color: #57B890;
   color: white;
 }
+
+h1 {
+  text-align: center;
+    color: #1C0B54;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38.4px;
+}
