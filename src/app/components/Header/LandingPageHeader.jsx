@@ -5,16 +5,15 @@ import { HeaderNavigation } from './HeaderNavigation';
 import { CustomButton } from '../Button';
 import {ReactComponent as Logo} from '../../asset/logo.svg';
 // import { ReactComponent as Menuicon } from '../../assets/Icons/menu.svg'
-import { Link } from 'react-router-dom';
 
-function useState(initialValue) {
-    let val = initialValue
-    function change(newValue) {
-        val = newValue
-    }
+// function useState(initialValue) {
+//     let val = initialValue
+//     function change(newValue) {
+//         val = newValue
+//     }
 
-    return [val, change]
-}
+//     return [val, change]
+// }
 export const LandingPageHeader = () => {
     // const [showMenu, setMenu] = React.useState(false);
 
@@ -23,16 +22,16 @@ export const LandingPageHeader = () => {
     // }
 
     return (<header className='header'>
-        <div className="logo">
-            <Logo />
+        <div>
+            <Logo className='logo' />
         </div>
-        <Menuicon className='menu-icon' onClick={toggleMenu} fill='white' />
+        {/* <Menuicon className='menu-icon' onClick={toggleMenu} fill='white' /> */}
         <div className='menu'>
-            <HeaderNavigation className={showMenu ? 'mobile' : ''} />
+            <HeaderNavigation />
         </div>
         <div className="button">
+            <CustomButton className="login" onClick={()=>{}} type="secondary">Login</CustomButton>
             <CustomButton className="buttonsignup" onClick={()=>{}}>Sign Up</CustomButton>
-            <CustomButton className="login" onClick={()=>{}} type="outline"></CustomButton>
         </div>
     </header>)
 }

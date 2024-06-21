@@ -1,10 +1,10 @@
-
 import './App.css';
+import AllPages from './pages/AllPages';
 
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <AllPages />
     </div>
   );
 }
